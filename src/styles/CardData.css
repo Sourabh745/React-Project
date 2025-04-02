@@ -1,0 +1,91 @@
+*{
+  box-sizing: border-box;
+}
+
+.container-1{
+    display: grid;
+    gap: 80px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10%;
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 800px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .container-1{
+        display: grid;
+        column-gap: 5%;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 5%;
+        list-style-type: none;
+        
+    }
+  }
+
+/* CardData.css */
+
+/* Main container */
+.main-1 {
+  background-color: #f4f4f9;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Search input */
+label {
+  font-size: 14px;
+  color: #333;
+  margin-right: 10px;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-bottom: 20px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Sort dropdown */
+select {
+  padding: 8px;
+  margin-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+li {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+li:hover {
+  transform: scale(1.05);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.sorting{
+  float: right;
+}
